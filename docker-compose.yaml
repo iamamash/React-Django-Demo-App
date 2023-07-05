@@ -1,7 +1,13 @@
-version: '3.9'
-
+version: "3.8"
 services:
-  web:
+  my-web-app:
+    container_name: "react-django-app"
     build: .
+    image: react-django-app:latest
     ports:
-      - "8001:8001"
+      - 8000:8000
+    volumes:
+      - react_django_demo_app_volume:/app
+
+volumes:
+  react_django_demo_app_volume:
