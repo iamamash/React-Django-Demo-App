@@ -3,7 +3,7 @@ services:
   my-web-app:
     container_name: "react-django-app"
     build: .
-    image: iamamash/react-django-app:latest
+    image: react-django-app:latest
     ports:
       - 8000:8000
     volumes:
