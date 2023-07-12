@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   my-web-app:
-    image: iamamash/react_django_demo_app:latest
+    build: .
     ports:
       - 8000:8000
     volumes:
